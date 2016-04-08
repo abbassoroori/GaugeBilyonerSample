@@ -1,0 +1,640 @@
+10:33:08.957 Got a kill message. Killing runner.
+10:33:12.960 Killing runner with PID:2032 forcefully
+10:38:19.264 Checking updates...
+10:38:43.244 Runner connection error: Timed out connecting to [::]:52944
+10:38:43.244 Error while killing runner: os: process already finished
+10:38:43.244 Failed to start gauge API: Timed out connecting to [::]:52944
+10:43:28.957 Checking updates...
+10:44:19.905 Error Message: org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+oreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0a1","maxVersion":"45.0.1"},{"id":"xpcshell@tests.mozilla.org","minVersion":"0","maxVersion":"10"}],"targetPlatforms":[],"multiprocessCompatible":false,"seen":true}
+1460101415046	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1460101415046	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"b26bbuLqvKGQ","location":"app-global","version":"45.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1458086874000,"updateDate":1458086874000,"applyBackgroundUpdates":1,"skinnable":true,"size":7140,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.1","maxVersion":"45.0.1"}],"targetPlatforms":[],"seen":true}
+1460101415046	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1460101415047	DeferredSave.extensions.json	DEBUG	Save changes
+1460101415047	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1460101415047	addons.xpi-utils	DEBUG	Updating add-on states
+1460101415048	addons.xpi-utils	DEBUG	Writing add-ons list
+1460101415050	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1460101415050	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1460101415064	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1460101415064	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1460101415065	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1460101415080	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1460101415081	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1460101415081	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1460101415081	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1460101415081	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1460101415082	addons.manager	DEBUG	Starting provider: GMPProvider
+1460101415087	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1460101415087	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1460101415087	addons.manager	DEBUG	Starting provider: PluginProvider
+1460101415087	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1460101415087	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1460101415088	addons.manager	DEBUG	Completed startup sequence
+1460101416397	DeferredSave.extensions.json	DEBUG	Starting write
+1460101416558	addons.repository	DEBUG	No addons.json found.
+1460101416559	DeferredSave.addons.json	DEBUG	Save changes
+1460101416562	DeferredSave.addons.json	DEBUG	Starting timer
+1460101416673	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1460101416674	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1460101416674	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1460101416694	DeferredSave.extensions.json	DEBUG	Write succeeded
+1460101416695	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1460101416702	DeferredSave.addons.json	DEBUG	Starting write
+1460101416735	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: driver.version: Driver
+10:44:19.905 Stacktrace: 
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:117)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+DriverFactory.getDriver(DriverFactory.java:15)
+Driver.initializeDriver(Driver.java:14)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionStartingProcessor.process(SuiteExecutionStartingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:44:20.325 Error Message: java.lang.NullPointerException
+10:44:20.325 Stacktrace: 
+Driver.closeDriver(Driver.java:20)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionEndingProcessor.process(SuiteExecutionEndingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:44:20.575 Plugin [Html Report] with pid [2235] has exited
+10:44:24.000 Specifications:	0 executed	0 passed	0 failed	0 skipped
+10:44:24.000 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+10:44:24.000 
+Total time taken: 47.668s
+10:46:43.514 Checking updates...
+10:47:34.955 Error Message: org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+oreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0a1","maxVersion":"45.0.1"},{"id":"xpcshell@tests.mozilla.org","minVersion":"0","maxVersion":"10"}],"targetPlatforms":[],"multiprocessCompatible":false,"seen":true}
+1460101608989	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1460101608990	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"xQWPN0wNm7RR","location":"app-global","version":"45.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1458086874000,"updateDate":1458086874000,"applyBackgroundUpdates":1,"skinnable":true,"size":7140,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.1","maxVersion":"45.0.1"}],"targetPlatforms":[],"seen":true}
+1460101608992	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1460101608994	DeferredSave.extensions.json	DEBUG	Save changes
+1460101608995	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1460101608995	addons.xpi-utils	DEBUG	Updating add-on states
+1460101608996	addons.xpi-utils	DEBUG	Writing add-ons list
+1460101608998	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1460101608998	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1460101609025	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1460101609025	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1460101609026	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1460101609046	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1460101609046	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1460101609046	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1460101609047	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1460101609047	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1460101609048	addons.manager	DEBUG	Starting provider: GMPProvider
+1460101609054	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1460101609054	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1460101609054	addons.manager	DEBUG	Starting provider: PluginProvider
+1460101609055	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1460101609055	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1460101609055	addons.manager	DEBUG	Completed startup sequence
+1460101609499	DeferredSave.extensions.json	DEBUG	Starting write
+1460101609657	addons.repository	DEBUG	No addons.json found.
+1460101609657	DeferredSave.addons.json	DEBUG	Save changes
+1460101609660	DeferredSave.addons.json	DEBUG	Starting timer
+1460101609680	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1460101609680	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1460101609681	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1460101609686	DeferredSave.extensions.json	DEBUG	Write succeeded
+1460101609686	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1460101609722	DeferredSave.addons.json	DEBUG	Starting write
+1460101609739	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: driver.version: Driver
+10:47:34.955 Stacktrace: 
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:117)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+DriverFactory.getDriver(DriverFactory.java:15)
+Driver.initializeDriver(Driver.java:14)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionStartingProcessor.process(SuiteExecutionStartingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:47:35.252 Error Message: java.lang.NullPointerException
+10:47:35.252 Stacktrace: 
+Driver.closeDriver(Driver.java:20)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionEndingProcessor.process(SuiteExecutionEndingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:47:35.357 Plugin [Html Report] with pid [2272] has exited
+10:47:36.667 Specifications:	0 executed	0 passed	0 failed	0 skipped
+10:47:36.667 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+10:47:36.667 
+Total time taken: 47.477s
+10:49:32.408 Checking updates...
+10:50:22.431 Error Message: org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+oreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0a1","maxVersion":"45.0.1"},{"id":"xpcshell@tests.mozilla.org","minVersion":"0","maxVersion":"10"}],"targetPlatforms":[],"multiprocessCompatible":false,"seen":true}
+1460101777579	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1460101777580	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"1vKMWd7uEw22","location":"app-global","version":"45.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1458086874000,"updateDate":1458086874000,"applyBackgroundUpdates":1,"skinnable":true,"size":7140,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.1","maxVersion":"45.0.1"}],"targetPlatforms":[],"seen":true}
+1460101777580	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1460101777581	DeferredSave.extensions.json	DEBUG	Save changes
+1460101777581	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1460101777581	addons.xpi-utils	DEBUG	Updating add-on states
+1460101777582	addons.xpi-utils	DEBUG	Writing add-ons list
+1460101777584	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1460101777585	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1460101777600	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1460101777600	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1460101777600	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1460101777616	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1460101777616	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1460101777616	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1460101777616	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1460101777616	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1460101777617	addons.manager	DEBUG	Starting provider: GMPProvider
+1460101777622	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1460101777622	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1460101777622	addons.manager	DEBUG	Starting provider: PluginProvider
+1460101777622	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1460101777623	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1460101777623	addons.manager	DEBUG	Completed startup sequence
+1460101778029	DeferredSave.extensions.json	DEBUG	Starting write
+1460101778156	addons.repository	DEBUG	No addons.json found.
+1460101778156	DeferredSave.addons.json	DEBUG	Save changes
+1460101778160	DeferredSave.addons.json	DEBUG	Starting timer
+1460101778183	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1460101778183	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1460101778183	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1460101778186	DeferredSave.extensions.json	DEBUG	Write succeeded
+1460101778186	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1460101778305	DeferredSave.addons.json	DEBUG	Starting write
+1460101778318	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: driver.version: Driver
+10:50:22.447 Stacktrace: 
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:117)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+DriverFactory.getDriver(DriverFactory.java:15)
+Driver.initializeDriver(Driver.java:14)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionStartingProcessor.process(SuiteExecutionStartingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:50:22.753 Error Message: java.lang.NullPointerException
+10:50:22.753 Stacktrace: 
+Driver.closeDriver(Driver.java:20)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:98)
+com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:84)
+com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:41)
+com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+com.thoughtworks.gauge.processor.SuiteExecutionEndingProcessor.process(SuiteExecutionEndingProcessor.java:26)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+10:50:22.862 Plugin [Html Report] with pid [2296] has exited
+10:50:25.586 Specifications:	0 executed	0 passed	0 failed	0 skipped
+10:50:25.586 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+10:50:25.586 
+Total time taken: 47.191s
+11:04:15.005 Checking updates...
+11:04:22.663 # Sample Specification
+11:04:22.674 ## Search for Gauge Documentation
+11:04:22.675 * Navigate to "http://getgauge.io"
+11:04:31.913 * Go to Gauge Get Started Page
+11:04:33.894 Plugin [Html Report] with pid [2567] has exited
+11:04:34.298 Specifications:	1 executed	1 passed	0 failed	0 skipped
+11:04:34.298 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+11:04:34.299 
+Total time taken: 15.068s
+11:08:16.455 Checking updates...
+11:08:24.174 # Google Knowledege Graph Specification
+11:08:24.175 ## Google knowledge graph should return the name of US President
+11:08:24.175 * Navigate to "https://www.google.com.tr"
+11:08:30.029 
+Failed Step: Navigate to "https://www.google.com.tr"
+11:08:30.029 Error Message: java.lang.AssertionError
+11:08:30.029 Stacktrace: 
+org.junit.Assert.fail(Assert.java:86)
+org.junit.Assert.assertTrue(Assert.java:41)
+org.junit.Assert.assertTrue(Assert.java:52)
+SampleTest.navigateTo(SampleTest.java:16)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+11:08:30.142 Plugin [Html Report] with pid [2602] has exited
+11:08:33.973 Specifications:	1 executed	0 passed	1 failed	0 skipped
+11:08:33.973 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+11:08:33.973 
+Total time taken: 9.45s
+11:19:31.327 # Google Knowledege Graph Specification
+11:19:31.343 ## Google knowledge graph should return the name of US President
+11:19:31.344 * Navigate to "https://www.google.com.tr"
+11:19:39.626 * Enter query "US President" in the search box and submit
+11:19:41.994 * The knowledge graph box should show "Barack Obama" as result
+11:19:42.784 
+Failed Step: The knowledge graph box should show "Barack Obama" as result
+11:19:42.784 Error Message: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"_eF"}
+Command duration or timeout: 69 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dea5c740-3ac0-1642-b054-9415c250aa2c
+*** Element info: {Using=class name, value=_eF}
+11:19:42.784 Stacktrace: 
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+GoogleTest.verifySearchResult(GoogleTest.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+11:19:42.900 Plugin [Html Report] with pid [2695] has exited
+11:19:46.023 Specifications:	1 executed	0 passed	1 failed	0 skipped
+11:19:46.031 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+11:19:46.031 
+Total time taken: 16.238s
+11:26:34.034 # Google Knowledege Graph Specification
+11:26:34.035 ## Google knowledge graph should return the name of Bilyoner
+11:26:34.036 * Navigate to "https://www.google.com.tr"
+11:26:40.683 * Enter query "bilyoner" in the search box and submit
+11:26:43.003 * The knowledge graph box should show "Türkiye'nin Lider Şans Oyunları Sitesi" as result
+11:26:43.205 Plugin [Html Report] with pid [2771] has exited
+11:26:43.609 Specifications:	1 executed	1 passed	0 failed	0 skipped
+11:26:43.609 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+11:26:43.609 
+Total time taken: 13.599s
+11:38:16.369 # Google Knowledege Graph Specification
+11:38:16.371 ## Google knowledge graph should return the name of Bilyoner
+11:38:16.372 * Su sayfaya git "https://www.google.com.tr"
+11:38:21.487 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+11:38:23.761 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+11:38:24.276 Plugin [Html Report] with pid [2864] has exited
+11:38:24.681 Specifications:	1 executed	1 passed	0 failed	0 skipped
+11:38:24.681 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+11:38:24.681 
+Total time taken: 12.205s
+11:39:47.508 Checking updates...
+11:39:47.522 Runner connection error: Timed out connecting to [::]:57621
+11:39:47.522 Failed to start gauge API: Timed out connecting to [::]:57621
+11:40:15.363 # Google Knowledege Graph Specification
+11:40:15.384 ## Google knowledge graph should return the name of Bilyoner
+11:40:15.385 * Su sayfaya git "https://www.google.com.tr"
+11:40:20.522 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+11:40:22.778 * Ilk sonuc "mertfasfasfd" cumlesini icermeli
+11:40:23.629 
+Failed Step: Ilk sonuc "mertfasfasfd" cumlesini icermeli
+11:40:23.629 Error Message: java.lang.AssertionError
+11:40:23.629 Stacktrace: 
+org.junit.Assert.fail(Assert.java:86)
+org.junit.Assert.assertTrue(Assert.java:41)
+org.junit.Assert.assertTrue(Assert.java:52)
+GoogleTest.verifySearchResult(GoogleTest.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+11:40:23.949 Plugin [Html Report] with pid [2906] has exited
+11:40:27.884 Specifications:	1 executed	0 passed	1 failed	0 skipped
+11:40:27.885 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+11:40:27.885 
+Total time taken: 12.898s
+12:04:09.832 # Google Knowledege Graph Specification
+12:04:09.833 ## Google search step
+12:04:09.834 * Su sayfaya git "https://www.google.com.tr"
+12:04:26.380 Checking updates...
+12:04:46.879 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:04:49.259 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+12:04:52.412 ## Open bilyoner.com web page
+12:04:52.412 * Arama sonuclarindan ilkini sec
+12:04:53.518 
+Failed Step: Arama sonuclarindan ilkini sec
+12:04:53.518 Error Message: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":".//*[@id='rso']/div[1]/div/div/h3/a"}
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40a00975-b4b6-874d-b867-38ac957b2123
+*** Element info: {Using=name, value=.//*[@id='rso']/div[1]/div/div/h3/a}
+12:04:53.518 Stacktrace: 
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+org.openqa.selenium.By$ByName.findElement(By.java:303)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+HomePageTest.clickFirstResult(HomePageTest.java:13)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:96)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+12:04:53.731 Plugin [Html Report] with pid [3119] has exited
+12:04:57.732 Killing runner with PID:3117 forcefully
+12:04:57.732 Specifications:	1 executed	0 passed	1 failed	0 skipped
+12:04:57.733 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+12:04:57.733 
+Total time taken: 50.214s
+12:05:23.830 # Google Knowledege Graph Specification
+12:05:23.831 ## Google search step
+12:05:23.831 * Su sayfaya git "https://www.google.com.tr"
+12:05:32.151 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:05:34.441 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+12:05:34.495 ## Open bilyoner.com web page
+12:05:34.495 * Arama sonuclarindan ilkini sec
+12:05:35.524 
+Failed Step: Arama sonuclarindan ilkini sec
+12:05:35.524 Error Message: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":".//*[@id='rso']/div[1]/div/div/h3/a"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Bilyoners-Mac-mini.local', ip: '10.34.17.165', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eb0d73e5-def1-ae48-931b-29d355038e73
+*** Element info: {Using=name, value=.//*[@id='rso']/div[1]/div/div/h3/a}
+12:05:35.524 Stacktrace: 
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+org.openqa.selenium.By$ByName.findElement(By.java:303)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+HomePageTest.clickFirstResult(HomePageTest.java:13)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:96)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+12:05:35.741 Plugin [Html Report] with pid [3135] has exited
+12:05:36.752 Specifications:	1 executed	0 passed	1 failed	0 skipped
+12:05:36.752 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+12:05:36.752 
+Total time taken: 16.36s
+12:07:03.497 # Google Knowledege Graph Specification
+12:07:03.499 ## Google search step
+12:07:03.499 * Su sayfaya git "https://www.google.com.tr"
+12:07:09.118 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:07:11.392 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+12:07:11.482 ## Open bilyoner.com web page
+12:07:11.482 * Arama sonuclarindan ilkini sec
+12:07:15.667 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+12:07:22.853 Checking updates...
+12:07:34.599 
+Failed Step: Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+12:07:34.623 Error Message: org.junit.ComparisonFailure: https://www.bilyoner.com/ expected:<[https://www.bilyoner.com/]> but was:<[Anasayfa acilamadi.]>
+12:07:34.623 Stacktrace: 
+org.junit.Assert.assertEquals(Assert.java:115)
+HomePageTest.homePageTest(HomePageTest.java:19)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+12:07:34.747 Plugin [Html Report] with pid [3165] has exited
+12:07:35.853 Specifications:	1 executed	0 passed	1 failed	0 skipped
+12:07:35.853 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+12:07:35.853 
+Total time taken: 35.816s
+12:09:32.773 # Google Knowledege Graph Specification
+12:09:32.774 ## Google search step
+12:09:32.775 * Su sayfaya git "https://www.google.com.tr"
+12:09:41.414 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:09:43.660 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+12:09:43.708 ## Open bilyoner.com web page
+12:09:43.709 * Arama sonuclarindan ilkini sec
+12:09:47.839 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+12:09:52.177 Checking updates...
+12:09:57.336 Plugin [Html Report] with pid [3191] has exited
+12:09:57.739 Specifications:	1 executed	1 passed	0 failed	0 skipped
+12:09:57.739 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+12:09:57.739 
+Total time taken: 29.358s
+12:13:39.336 # Google Knowledege Graph Specification
+12:13:39.337 ## Google search step
+12:13:39.338 * Su sayfaya git "https://www.google.com.tr"
+12:13:48.215 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:13:50.446 * Ilk sonuc "mertfasfasfd" cumlesini icermeli
+12:13:51.210 
+Failed Step: Ilk sonuc "mertfasfasfd" cumlesini icermeli
+12:13:51.210 Error Message: java.lang.AssertionError
+12:13:51.210 Stacktrace: 
+org.junit.Assert.fail(Assert.java:86)
+org.junit.Assert.assertTrue(Assert.java:41)
+org.junit.Assert.assertTrue(Assert.java:52)
+GoogleTest.verifySearchResult(GoogleTest.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+12:13:51.211 ## Open bilyoner.com web page
+12:13:51.212 * Arama sonuclarindan ilkini sec
+12:13:55.346 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+12:14:00.870 Checking updates...
+12:14:05.451 Plugin [Html Report] with pid [3217] has exited
+12:14:06.255 Specifications:	1 executed	0 passed	1 failed	0 skipped
+12:14:06.255 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+12:14:06.255 
+Total time taken: 29.285s
+12:15:00.704 # Google Knowledege Graph Specification
+12:15:00.705 ## Google search step
+12:15:00.707 * Su sayfaya git "https://www.google.com.tr"
+12:15:09.327 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+12:15:11.577 * Ilk sonuc "mertfasfasfd" cumlesini icermeli
+12:15:12.164 
+Failed Step: Ilk sonuc "mertfasfasfd" cumlesini icermeli
+12:15:12.164 Error Message: java.lang.AssertionError
+12:15:12.164 Stacktrace: 
+org.junit.Assert.fail(Assert.java:86)
+org.junit.Assert.assertTrue(Assert.java:41)
+org.junit.Assert.assertTrue(Assert.java:52)
+GoogleTest.verifySearchResult(GoogleTest.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:94)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+12:15:12.166 ## Open bilyoner.com web page
+12:15:12.166 * Arama sonuclarindan ilkini sec
+12:15:16.307 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+12:15:22.018 Checking updates...
+12:15:28.949 Plugin [Html Report] with pid [3267] has exited
+12:15:29.352 Specifications:	1 executed	0 passed	1 failed	0 skipped
+12:15:29.352 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+12:15:29.352 
+Total time taken: 31.26s
+14:43:38.754 Got a kill message. Killing runner.
+14:43:42.756 Killing runner with PID:3774 forcefully
+17:03:47.246 Checking updates...
+17:03:55.986 # Bilyoner Gauge Sample
+17:03:56.027 ## Search Bilyoner on Google
+17:03:56.055 * Su sayfaya git "https://www.google.com.tr"
+17:04:00.144 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+17:04:02.530 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+17:04:02.636 ## Open bilyoner.com Web Page
+17:04:02.636 * Arama sonuclarindan ilkini sec
+17:04:06.906 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+17:04:16.635 Plugin [Html Report] with pid [4234] has exited
+17:04:16.937 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:04:16.937 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+17:04:16.951 
+Total time taken: 28.633s
