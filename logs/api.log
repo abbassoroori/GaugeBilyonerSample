@@ -1081,3 +1081,41 @@ lse >
 17:03:47.698 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Acilan sayfanin url'i {} olmali" parameterizedStepValue:"Acilan sayfanin url'i <url> olmali" parameters:"url" > > 
 17:03:47.699 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama motoruna <searchText> yaz ve enter'a bas" hasInlineTable:false > 
 17:03:47.699 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama motoruna {} yaz ve enter'a bas" parameterizedStepValue:"Arama motoruna <searchText> yaz ve enter'a bas" parameters:"searchText" > > 
+17:18:45.718 Initializing concepts cache with 0 concepts
+17:18:45.719 Watching directory: /Users/mertyaman/Documents/GitHub Repo/GaugeBilyonerSample/specs
+17:18:45.768 Found 2 files
+17:18:45.776 Initializing specs cache with 1 specs
+17:18:45.776 Adding specs from /Users/mertyaman/Documents/GitHub Repo/GaugeBilyonerSample/specs/knowledge_graph.spec
+17:18:45.776 Initializing steps cache with 5 steps
+17:18:54.129 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Su sayfaya git <link>" hasInlineTable:false > 
+17:18:54.130 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Su sayfaya git {}" parameterizedStepValue:"Su sayfaya git <link>" parameters:"link" > > 
+17:18:54.135 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ilk sonuc <expectedResult> cumlesini icermeli" hasInlineTable:false > 
+17:18:54.135 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ilk sonuc {} cumlesini icermeli" parameterizedStepValue:"Ilk sonuc <expectedResult> cumlesini icermeli" parameters:"expectedResult" > > 
+17:18:54.136 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama sonuclarindan ilkini sec" hasInlineTable:false > 
+17:18:54.136 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama sonuclarindan ilkini sec" parameterizedStepValue:"Arama sonuclarindan ilkini sec" > > 
+17:18:54.136 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Acilan sayfanin url'i <url> olmali" hasInlineTable:false > 
+17:18:54.136 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Acilan sayfanin url'i {} olmali" parameterizedStepValue:"Acilan sayfanin url'i <url> olmali" parameters:"url" > > 
+17:18:54.137 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama motoruna <searchText> yaz ve enter'a bas" hasInlineTable:false > 
+17:18:54.137 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama motoruna {} yaz ve enter'a bas" parameterizedStepValue:"Arama motoruna <searchText> yaz ve enter'a bas" parameters:"searchText" > > 
+17:19:16.189 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Su sayfaya git <link>" hasInlineTable:false > 
+17:19:16.189 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Su sayfaya git {}" parameterizedStepValue:"Su sayfaya git <link>" parameters:"link" > > 
+17:19:16.196 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ilk sonuc <expectedResult> cumlesini icermeli" hasInlineTable:false > 
+17:19:16.196 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ilk sonuc {} cumlesini icermeli" parameterizedStepValue:"Ilk sonuc <expectedResult> cumlesini icermeli" parameters:"expectedResult" > > 
+17:19:16.196 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama sonuclarindan ilkini sec" hasInlineTable:false > 
+17:19:16.196 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama sonuclarindan ilkini sec" parameterizedStepValue:"Arama sonuclarindan ilkini sec" > > 
+17:19:16.197 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Acilan sayfanin url'i <url> olmali" hasInlineTable:false > 
+17:19:16.197 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Acilan sayfanin url'i {} olmali" parameterizedStepValue:"Acilan sayfanin url'i <url> olmali" parameters:"url" > > 
+17:19:16.198 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama motoruna <searchText> yaz ve enter'a bas" hasInlineTable:false > 
+17:19:16.198 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama motoruna {} yaz ve enter'a bas" parameterizedStepValue:"Arama motoruna <searchText> yaz ve enter'a bas" parameters:"searchText" > > 
+17:19:52.511 Spec file added / modified: /Users/mertyaman/Documents/GitHub Repo/GaugeBilyonerSample/specs/test_cases.spec
+17:19:52.558 Spec file removed: /Users/mertyaman/Documents/GitHub Repo/GaugeBilyonerSample/specs/knowledge_graph.spec
+17:23:03.544 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Su sayfaya git <link>" hasInlineTable:false > 
+17:23:03.545 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Su sayfaya git {}" parameterizedStepValue:"Su sayfaya git <link>" parameters:"link" > > 
+17:23:03.550 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Ilk sonuc <expectedResult> cumlesini icermeli" hasInlineTable:false > 
+17:23:03.550 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Ilk sonuc {} cumlesini icermeli" parameterizedStepValue:"Ilk sonuc <expectedResult> cumlesini icermeli" parameters:"expectedResult" > > 
+17:23:03.551 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama sonuclarindan ilkini sec" hasInlineTable:false > 
+17:23:03.551 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama sonuclarindan ilkini sec" parameterizedStepValue:"Arama sonuclarindan ilkini sec" > > 
+17:23:03.551 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Acilan sayfanin url'i <url> olmali" hasInlineTable:false > 
+17:23:03.552 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Acilan sayfanin url'i {} olmali" parameterizedStepValue:"Acilan sayfanin url'i <url> olmali" parameters:"url" > > 
+17:23:03.552 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Arama motoruna <searchText> yaz ve enter'a bas" hasInlineTable:false > 
+17:23:03.552 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Arama motoruna {} yaz ve enter'a bas" parameterizedStepValue:"Arama motoruna <searchText> yaz ve enter'a bas" parameters:"searchText" > > 

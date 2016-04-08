@@ -638,3 +638,33 @@ Total time taken: 31.26s
 17:04:16.937 Scenarios:	2 executed	2 passed	0 failed	0 skipped
 17:04:16.951 
 Total time taken: 28.633s
+17:18:45.933 Got a kill message. Killing runner.
+17:18:49.936 Killing runner with PID:4577 forcefully
+17:19:11.959 Checking updates...
+17:19:23.439 # Bilyoner Gauge Sample
+17:19:23.448 ## Search Bilyoner on Google
+17:19:23.449 * Su sayfaya git "https://www.google.com.tr"
+17:19:27.555 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+17:19:29.783 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+17:19:29.882 ## Open bilyoner.com Web Page
+17:19:29.883 * Arama sonuclarindan ilkini sec
+17:19:34.257 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+17:21:16.743 Plugin [Html Report] with pid [4623] has exited
+17:21:17.058 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:21:17.058 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+17:21:17.071 
+Total time taken: 2m0.11s
+17:22:59.284 Checking updates...
+17:23:10.493 # Bilyoner Gauge Sample
+17:23:10.494 ## Search Bilyoner on Google
+17:23:10.494 * Su sayfaya git "https://www.google.com.tr"
+17:23:14.895 * Arama motoruna "Bilyoner" yaz ve enter'a bas
+17:23:17.111 * Ilk sonuc "Türkiye'nin Lider Şans Oyunları Sitesi" cumlesini icermeli
+17:23:17.161 ## Open bilyoner.com Web Page
+17:23:17.162 * Arama sonuclarindan ilkini sec
+17:23:21.523 * Acilan sayfanin url'i "https://www.bilyoner.com/" olmali
+17:23:31.882 Plugin [Html Report] with pid [4651] has exited
+17:23:32.284 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:23:32.284 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+17:23:32.284 
+Total time taken: 28.13s
