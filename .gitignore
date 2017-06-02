@@ -1,0 +1,8 @@
+
+logs/
+reports/
+target
+.gauge/
+test_results
+test_results.zip
+.idea

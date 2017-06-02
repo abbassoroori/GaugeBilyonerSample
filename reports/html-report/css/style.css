@@ -167,18 +167,18 @@ header.top .project {
     padding: 0;
 }
 
-.report_test-results ul li,
+.report-overview .report_test-results ul li,
 .report_chart .total-specs {
     display: inline-block;
     padding: 0.75rem;
     cursor: pointer;
     margin: 1rem 0.25rem;
-    background-color: #f9f9f9;
+    /*background-color: #f9f9f9;*/
     transition: background-color 0.75s;
 }
 
-.report_test-results ul li:focus,
-.report_test-results ul li:hover,
+.report-overview .report_test-results ul li:focus,
+.report-overview    .report_test-results ul li:hover,
 .report_chart .total-specs:focus,
 .report_chart .total-specs:hover {
     background-color: #f0f0f0;
@@ -507,6 +507,7 @@ header.top .project {
     font-size: 1rem;
     margin-top: 20px;
     color: #cccccc;
+    float: left;
 }
 
 .curr-spec .tags {
@@ -519,10 +520,12 @@ header.top .project {
     font-size: 0.8rem;
 }
 
+/* TODO: remove class curr-spec */
 .curr-spec .tags span:last-child:after {
     content: "";
 }
 
+/* TODO: remove class curr-spec */
 .curr-spec .tags span:after {
     content: ",";
 }
@@ -535,6 +538,7 @@ header.top .project {
     background: #fff;
     margin: 20px 0;
     position: relative;
+    padding-bottom: 1px;
 }
 
 .scenario-container.passed:before {
@@ -601,6 +605,15 @@ header.top .project {
     top: 0;
 }
 
+.scenario-container .not-executed {
+    border-left: 5px solid #a1a1a1;
+    margin-top: 20px;
+}
+
+.scenario-container .not-executed .step {
+    color: #a1a1a1;
+}
+
 .scenario-head {
     margin-left: 40px;
     margin-bottom: 20px;
@@ -638,6 +651,13 @@ header.top .project {
     padding: 0.5rem;
     border: 1px solid #cccccc;
     margin-bottom: 10px;
+}
+
+.step li:last-child {
+    margin-bottom: 0;
+}
+.step li:first-child {
+    margin-top: 10px;
 }
 
 .step li.pass {
@@ -698,13 +718,15 @@ input[type='text']:focus {
   background: #ffffff url("../images/leftarrow.png") no-repeat scroll 17% 75%;
 }
 
-#congratulationsHidden {
-    display: none;
-}
-
 #listOfSpecifications .errored {
     border-left: 10px solid #ffbf37;
     background-color: lightgray;
+}
+
+.concept-steps {
+    border-left: 2px dashed #eee;
+    padding-left: 20px;
+    display: none
 }
 
 .not-executed li {
@@ -752,6 +774,10 @@ footer p {
     max-width: 100%;
 }
 
+.error {
+    width: 100%;
+}
+
 .exception-container .screenshot-container {
     position: relative;
 }
@@ -783,6 +809,26 @@ footer p {
 
 .failure_container {
     margin: 20px 0;
+}
+
+.error-container {
+    padding: 20px;
+    border-top: 1px solid #e73e48;
+    border-bottom: 1px solid #e73e48;
+    border-left: 5px solid #e73e48;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+.toggle-show {
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #fff;
+    color: #000;
 }
 
 /* Lightbox styles */
@@ -819,15 +865,13 @@ footer p {
 
 * html #overlay{
 	background-color: #333;
-	back\ground-color: transparent;
+	background-color: transparent;
 	background-image: url(../images/blank.gif);
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/overlay.png", sizingMethod="scale");
 }
 
 
 /* End Lightbox styles */
-
-/*# sourceMappingURL=styles.css.map */
 
 .collapse-messages-header {
     cursor: pointer;
@@ -849,23 +893,37 @@ footer p {
 
 .message-container {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
 }
 
-.message-container .collapse-messages {
-    padding-top: 0;
+.message-container i {
+    cursor: pointer;
+}
+
+.message-container .messages{
+    display: block;
+    background-color: #ccc;
+    margin-left: 5px;
+    font-family:  Courier New;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message-container .messages .step-message{
+    padding: 0px 0px 0px 10px;
+}
+
+.message-container .messages .step-message p:before{
+    content: "$";
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.step .message-container {
+    margin-top: 5px;
 }
 
 .step-info {
     margin-bottom: 1.5rem;
 }
-
-/**@media screen and (min-width: 760px) {
-
-
-
-} **/
 
 @media screen and (min-width: 1024px) {
 
@@ -906,7 +964,10 @@ footer p {
         border-right: 5px solid #cccccc;
         border-bottom: none;
         padding-right: 2rem;
-        background-color: transparent;
+    }
+
+    .report_test-results .active, .report_chart .active {
+        background-color: #ddd;
     }
 
     .report_chart .total-specs span {
@@ -924,7 +985,6 @@ footer p {
 
     .report_test-results ul li {
         padding: 10px;
-        background-color: transparent;
     }
 
     .report_test-results .value {
@@ -1006,7 +1066,250 @@ footer p {
         max-width: 100%;
     }
 
+    .error-message {
+        max-width: 45rem;
+        display: block;
+        overflow: scroll;
+        overflow-wrap: break-word;
+    }
+
     .stacktrace {
         max-width: 45rem;
     }
+
+    .error {
+        width: 60rem;
+    }
+}
+
+.env-vars {
+    display: none;
+    clear: both;
+    float: none;
+    width: 200px;
+    padding: 10px;
+    background: white;
+    position: fixed;
+    z-index : 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.modal-link {
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+    background-color: #ffffff;
+}
+
+.modal-title {
+    background: #f6f6f6;
+    margin: 0 0 20px 0;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.close {
+    color: #aaa;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    font-size: 40px;
+    line-height: 30px;
+    top: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 0 30px 20px 30px;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+
+.concept .step-info {
+    cursor: pointer;
+}
+
+.concept .step-info:hover {
+    background-color: #f0f0f0;
+}
+
+.spec-filename {
+    float: right;
+    font-size: small;
+    color: black;
+}
+
+.spec-filename input {
+    font-family: Courier New;
+}
+
+.spec-filename button {
+    background-color: #d0d0d0;
+    border: 0;
+    padding-top: 1px;
+    box-shadow: none;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+}
+
+.spec-filename button .fa {
+    vertical-align: middle
+}
+
+.spec-filename label {
+    color: #fff;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+.autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+
+    /* core styles should not be changed */
+    position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.autocomplete-suggestion.selected { background: #f0f0f0; }
+
+a#view-env{
+    float:right
+}
+
+.env-vars .popup-header {
+    display: inline-block;
+    width: 100%;
+}
+
+.env-vars .popup-header .close-popup {
+    cursor: pointer;
+    float: right;
+}
+
+svg#pie-chart {
+	width  : 200px;
+	height : 150px;
+}
+
+#pie-chart path.passed{
+    fill: #27caa9;
+}
+
+#pie-chart path.failed{
+    fill: #e73e48;
+}
+
+#pie-chart path.skipped{
+    fill: #999999;
+}
+
+#pie-chart path:hover{
+    cursor: pointer;
+}
+
+#pie-chart path {
+    stroke: #ccc;
+    stroke-width: 3;
+}
+
+#pie-chart path.shadow {
+    opacity: 0.1;
+}
+
+#pie-chart path.shadow:hover {
+    opacity: 1;
+    stroke-width: 1;
+    transition: opacity 0.50s;
+}
+
+.hidden, #congratulationsHidden {
+    display: none;
+}
+.spec-head-wrapper {
+    overflow: hidden;
+}
+
+#specificationContainer .report_test-results {
+    float: right;
+    padding: 0;
+
+}
+
+#specificationContainer .report_test-results ul li {
+    padding: 0px;
+    margin: 0 5px;
+}
+#specificationContainer .report_test-results  .value {
+    font-size: 1.5rem;
+}
+#specificationContainer .report_test-results .txt {
+    font-size: .75rem;
+}
+
+#specificationContainer .spec-head {
+    font-size: 1.2rem;
+}
+ #specificationContainer .spec-filename {
+     display: none;
+ }
+
+.spec-meta {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.spec-meta .time {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    #specificationContainer .spec-head {
+        font-size: 1.2rem;
+        width: calc(100% - 300px);
+        float:left;
+    }
+
+    #specificationContainer .report_test-results {
+        width: 280px;
+    }
+
+    #specificationContainer .report_test-results ul {
+        float: right;
+    }
+
+    #specificationContainer .report_test-results ul li{
+        display: inline-block;
+    }
+
+    #specificationContainer .report_test-results ul li .txt {
+        font-size: .65rem;
+    }
+
+    #specificationContainer .spec-filename {
+        display: block;
+    }
+}
+
+.is-modal-open {
+    overflow: hidden;
 }

@@ -1,1 +1,1 @@
-##Test Automation with Gauge-Selenium-IntelliJ-Maven-Java
+This test automation project created for Bilyoner.com new homepage design.
